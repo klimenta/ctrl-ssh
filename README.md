@@ -68,7 +68,7 @@ I don't use any special configurations for the program. The program was tested w
 Tested on both Windows 10 64-bit and OS X Big Sur. I am sure it will work on other platforms as long as you have .NET Core 3.1 or higher. 
 
 ## Download
-Both standalone pre-compiled versions are available for Windows 64-bit and OS X.
+Both standalone pre-compiled versions are available for Windows 64-bit and OS X in the releases.
 
 
 
