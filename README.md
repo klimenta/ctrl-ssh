@@ -3,6 +3,20 @@
 
 I use this program primarilly on OS X, the alternatives are either expensive or difficult to maintain. For Windows, I stick to putty.
 
+NOTE: If you run this on Windows and you use a PEM key, you might get this error when you try to log in.
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+RESOLUTION: Execute the following commands.
+```
+set key="c:\file-location"
+cmd /c icacls %key% /c /t /inheritance:d
+cmd /c icacls %key% /c /t /grant %username%:F
+cmd /c icacls %key%  /c /t /remove Administrator BUILTIN\Administrators BUILTIN Everyone System Users "Authenticated Users"
+cmd /c icacls %key%
+```
 ## Sections and navigation
 
 ![ctrl-ssh under OSX screenshot ](ctrl-ssh_screenshot.png)
