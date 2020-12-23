@@ -84,5 +84,6 @@ Tested on both Windows 10 64-bit and OS X Big Sur. I am sure it will work on oth
 ## Download
 Both standalone pre-compiled versions are available for Windows 64-bit and OS X in the releases.
 
-
+## Issues
+When you run the program for the first time and add an entry, the background colors might turn black. Simply save the entry, exit the program and run it again and you won't see this issue again.
 
